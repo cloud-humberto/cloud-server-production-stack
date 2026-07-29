@@ -46,6 +46,7 @@ sudo ufw allow 443/tcp
 sudo ufw allow 22/tcp
 sudo ufw enable
 ```
+
 ### 3. Clone & Launch Full Stack
 Clone this repository and spin up all containers (Nginx Proxy + SSL + Monitoring):
 ```bash
@@ -53,3 +54,21 @@ git clone [https://github.com/cloud-humberto/cloud-server-production-stack.git](
 cd cloud-server-production-stack
 docker compose up -d
 ```
+
+---
+
+## 🛡️ Applied Security & Operational Best Practices
+
+- [x] **Zero Downtime SSL:** Automated Certbot container handling renewal background tasks.
+- [x] **Isolated Networking:** Internal Docker bridge network preventing direct access to application ports.
+- [x] **Resource Control:** Automated log rotation configured to avoid disk space depletion.
+- [x] **Intrusion Prevention:** Active Fail2ban monitoring for suspicious SSH and Web requests.
+
+---
+
+## 📬 Need a Custom Cloud Infrastructure Setup?
+
+I specialize in Linux server deployment, Dockerization, SSL automation, and server hardening with 24-hour turnaround times.
+
+- **Freelance Services:** Available for custom setups, server migrations, and troubleshooting.
+- **Supported Platforms:** AWS, Oracle Cloud (OCI), Google Cloud, DigitalOcean, Hetzner, Linode.
