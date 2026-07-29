@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  # Servidor Web / Reverse Proxy Nginx
+  web-proxy:
+    image: nginx:alpine
+    container_name: cloud_nginx_proxy
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - app-network
+
+  # Aplicação Modelo de Teste (Exemplo de Web App)
+  demo-app:
+    image: nginxdemos/hello
+    container_name: demo_web_app
+    restart: always
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
