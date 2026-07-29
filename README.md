@@ -50,7 +50,7 @@ sudo ufw enable
 ### 3. Clone & Launch Full Stack
 Clone this repository and spin up all containers (Nginx Proxy + SSL + Monitoring):
 ```bash
-git clone [https://github.com/cloud-humberto/cloud-server-production-stack.git](https://github.com/cloud-humberto/cloud-server-production-stack.git)
+git clone https://github.com/cloud-humberto/cloud-server-production-stack.git
 cd cloud-server-production-stack
 docker compose up -d
 ```
