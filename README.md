@@ -34,3 +34,18 @@ Update your Linux package manager and install Docker with security tools:
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y docker.io docker-compose-plugin ufw fail2ban
+
+### 2. Firewall & SSH Hardening
+Enable basic firewall rules to expose only necessary ports:
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 22/tcp
+sudo ufw enable
+
+### 3. Clone & Launch Full Stack
+Clone this repository and spin up all containers (Nginx Proxy + SSL + Monitoring):
+git clone [https://github.com/cloud-humberto/cloud-server-production-stack.git](https://github.com/cloud-humberto/cloud-server-production-stack.git)
+cd cloud-server-production-stack
+docker compose up -d
