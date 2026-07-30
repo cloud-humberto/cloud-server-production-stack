@@ -66,7 +66,12 @@ docker-compose up -d
 
 ---
 
-## 📬 Need a Custom Cloud Infrastructure Setup?
+---
+
+### 🛠️ Need Help Deploying or Configuring This Stack?
+If you need custom setup, Nginx reverse proxy configuration, SSL certificates, or server deployment on AWS, Oracle Cloud, or DigitalOcean, you can hire my service on Fiverr:
+
+[![Hire Me on Fiverr](https://img.shields.io/badge/Hire_Me_on-Fiverr-1dbf73?style=for-the-badge&logo=fiverr&logoColor=white)](http://www.fiverr.com/s/vvNxrLe)## 📬 Need a Custom Cloud Infrastructure Setup?
 
 I specialize in Linux server deployment, Dockerization, SSL automation, and server hardening with 24-hour turnaround times.
 
